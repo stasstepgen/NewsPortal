@@ -19,6 +19,13 @@ elseif ($path == 'logout')
     // Выход
     $response = controllerAdmin::logoutAction();
 }
+
+   //---------------------------------------list News
+elseif($path=='newsAdmin') {
+    $response = controllerAdminNews::NewsList();
+
+}
+
 else
 {
     // Страница не существует
